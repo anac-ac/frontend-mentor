@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+  justify-content: center;
+  display: flex;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  margin: 0;
+}
+
+.main-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1024px;
+
+  @media (min-width: 1024px) {
+    padding-top: 3rem;
+  }
+}
+
+.main-page section {
+  width: 100%;
+}
+
+.main-page__omelette-img {
+  width: 100%;
+  object-fit: contain;
+
+  @media (min-width: 1024px) {
+    border-radius: 1rem;
+  }
+}
+
+.main-page__title {
+  margin: 2rem 0;
+}
+
+.main-page__description {
+  margin: 0;
+}
+
+.main-page__step-by-step {
+  width: 85%;
+  color: hsl(18, 7%, 35%);
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
+
+  h1 {
+    color: hsl(24, 5%, 18%);
+    font-weight: 500;
+
+    @media (min-width: 1024px) {
+      font-size: 3rem;
+    }
+  }
+
+  ul,
+  ol {
+    padding-inline-start: 1.5rem;
+    margin-inline-start: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    margin-bottom: 0.7rem;
+    padding-left: 1rem;
+  }
+
+  li > span {
+    font-weight: bold;
+  }
+
+  li::marker {
+    color: hsl(332, 51%, 32%);
+  }
+
+  .main-page__preparation-time-section {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    margin-top: 2rem;
+
+    .main-page__preparation-time-title {
+      font-family: "Outfit", sans-serif;
+      font-size: 1.2rem;
+      color: hsl(332, 51%, 32%);
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+
+  .main-page__section {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+    border-color: hsl(30, 18%, 87%);
+    margin-top: 2rem;
+
+    .main-page__section-title {
+      color: hsl(14, 45%, 36%);
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    .main-page__nutrition-paragraph {
+      margin: 1rem 0;
+    }
+
+    .main-page__nutrition-information {
+      display: inline-grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      width: 100%;
+
+      p {
+        padding: 1rem 0;
+        border-bottom: 1px solid;
+        border-color: hsl(30, 18%, 87%);
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        display: inline-grid;
+        padding-left: 2rem;
+      }
+
+      p:last-child {
+        border-bottom: none;
+      }
+
+      span {
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .main-page__section:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.credits {
+  font-size: 0.8rem;
+  padding: 2rem 2rem 1rem;
+}
