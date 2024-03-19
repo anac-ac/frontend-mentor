@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>
+      Frontend Mentor | Social Media Dashboard With Theme Switcher Master
+    </title>
+  </head>
+
+  <body class="light">
+    <div class="dashboard">
+      <div class="dashboard__header">
+        <div class="dashboard__title">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="dashboard__mode-selection">
+          <p>Dark Mode</p>
+          <input type="checkbox" id="mode_selector" />
+          <label for="mode_selector"></label>
+        </div>
+      </div>
+
+      <div class="dashboard__followers-update">
+        <div class="dashboard__social-media">
+          <div class="dashboard__media-infos">
+            <img src="./assets/images/icon-facebook.svg" alt="facebook icon" />
+            <p>@nathanf</p>
+          </div>
+          <p class="dashboard__media-followers"><span>1987</span> Followers</p>
+          <div class="dashboard__followers-today">
+            <img src="./assets/images/icon-up.svg" alt="facebook icon" />
+            <p>12 Today</p>
+          </div>
+        </div>
+        <div class="dashboard__social-media twitter">
+          <div class="dashboard__media-infos">
+            <img src="./assets/images/icon-twitter.svg" alt="twitter icon" />
+            <p>@nathanf</p>
+          </div>
+          <p class="dashboard__media-followers"><span>1044</span> Followers</p>
+          <div class="dashboard__followers-today">
+            <img src="./assets/images/icon-up.svg" alt="facebook icon" />
+            <p>99 Today</p>
+          </div>
+        </div>
+        <div class="dashboard__social-media instagram">
+          <div class="dashboard__media-infos">
+            <img
+              src="./assets/images/icon-instagram.svg"
+              alt="instagram icon"
+            />
+            <p>@realnathanf</p>
+          </div>
+          <p class="dashboard__media-followers"><span>11k</span> Followers</p>
+          <div class="dashboard__followers-today">
+            <img src="./assets/images/icon-up.svg" alt="facebook icon" />
+            <p>1099 Today</p>
+          </div>
+        </div>
+        <div class="dashboard__social-media youtube">
+          <div class="dashboard__media-infos">
+            <img src="./assets/images/icon-youtube.svg" alt="youtube icon" />
+            <p>Nathan F.</p>
+          </div>
+          <p class="dashboard__media-followers">
+            <span>8239</span> Subscribers
+          </p>
+          <div class="dashboard__followers-today">
+            <img src="./assets/images/icon-down.svg" alt="facebook icon" />
+            <p class="down">144 Today</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard__overview-today">
+        <h2>Overview - Today</h2>
+        <div class="dashboard__overview-media">
+          <div class="dashboard__social-media-image">
+            <p class="dashboard__overview-title">Page Views</p>
+            <img src="./assets/images/icon-facebook.svg" alt="facebook icon"/>
+          </div>
+          <div class="dashboard__social-media-infos">
+            <p class="dashboard__overview-quantity">87</p>
+            <div class="dashboard__overview-image-percentage">
+              <img src="./assets/images/icon-up.svg" alt="facebook up arrow"/>
+              <p class="dashboard__overview-percentage up-color">3%</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__overview-media">
+          <div class="dashboard__social-media-image">
+            <p class="dashboard__overview-title">Likes</p>
+            <img src="./assets/images/icon-facebook.svg" alt="facebook icon"/>
+          </div>
+          <div class="dashboard__social-media-infos">
+            <p class="dashboard__overview-quantity">52</p>
+            <div class="dashboard__overview-image-percentage">
+              <img src="./assets/images/icon-down.svg" alt="facebook down arrow"/>
+              <p class="dashboard__overview-percentage down-color">2%</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__overview-media">
+          <div class="dashboard__social-media-image">
+            <p class="dashboard__overview-title">Likes</p>
+            <img src="./assets/images/icon-instagram.svg" alt="instagram icon"/>
+          </div>
+          <div class="dashboard__social-media-infos">
+            <p class="dashboard__overview-quantity">5462</p>
+            <div class="dashboard__overview-image-percentage">
+              <img src="./assets/images/icon-up.svg" alt="instagram up arrow"/>
+              <p class="dashboard__overview-percentage up-color">2257%</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__overview-media">
+          <div class="dashboard__social-media-image">
+            <p class="dashboard__overview-title">Profile Views</p>
+            <img src="./assets/images/icon-instagram.svg" alt="instagram icon"/>
+          </div>
+          <div class="dashboard__social-media-infos">
+            <p class="dashboard__overview-quantity">52k</p>
+            <div class="dashboard__overview-image-percentage">
+              <img src="./assets/images/icon-up.svg" alt="instagram up arrow"/>
+              <p class="dashboard__overview-percentage up-color">1375%</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__overview-media">
+          <div class="dashboard__social-media-image">
+            <p class="dashboard__overview-title">Retweets</p>
+            <img src="./assets/images/icon-twitter.svg" alt="twitter icon"/>
+          </div>
+          <div class="dashboard__social-media-infos">
+            <p class="dashboard__overview-quantity">117</p>
+            <div class="dashboard__overview-image-percentage">
+              <img src="./assets/images/icon-up.svg" alt="twitter up arrow"/>
+              <p class="dashboard__overview-percentage up-color">303%</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__overview-media">
+          <div class="dashboard__social-media-image">
+            <p class="dashboard__overview-title">Likes</p>
+            <img src="./assets/images/icon-twitter.svg" alt="twitter icon"/>
+          </div>
+          <div class="dashboard__social-media-infos">
+            <p class="dashboard__overview-quantity">507</p>
+            <div class="dashboard__overview-image-percentage">
+              <img src="./assets/images/icon-up.svg" alt="twitter up arrow"/>
+              <p class="dashboard__overview-percentage up-color">553%</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__overview-media">
+          <div class="dashboard__social-media-image">
+            <p class="dashboard__overview-title">Likes</p>
+            <img src="./assets/images/icon-youtube.svg" alt="youtube icon"/>
+          </div>
+          <div class="dashboard__social-media-infos">
+            <p class="dashboard__overview-quantity">107</p>
+            <div class="dashboard__overview-image-percentage">
+              <img src="./assets/images/icon-down.svg" alt="youtube down arrow"/>
+              <p class="dashboard__overview-percentage down-color">19%</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__overview-media">
+          <div class="dashboard__social-media-image">
+            <p class="dashboard__overview-title">Total Views</p>
+            <img src="./assets/images/icon-youtube.svg" alt="youtube icon"/>
+          </div>
+          <div class="dashboard__social-media-infos">
+            <p class="dashboard__overview-quantity">1407</p>
+            <div class="dashboard__overview-image-percentage">
+              <img src="./assets/images/icon-down.svg" alt="youtube down arrow"/>
+              <p class="dashboard__overview-percentage down-color">12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

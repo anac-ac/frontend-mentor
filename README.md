@@ -18,7 +18,7 @@ This is a solution for the [Recipe Page](https://www.frontendmentor.io/challenge
 
 #### Screenshots
 
-[my solution](https://anac-ac.github.io/frontend-mentor/level-newbie/recipe-page/index.html)
+Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/level-newbie/recipe-page/index.html)
 
 <p align="center">
     <img alt="" src="./img/frontend-nentor-recipe-web.gif" width="50%" align="top">
@@ -41,7 +41,7 @@ This is a solution for the [Testimonials Grid Section](https://www.frontendmento
 
 #### Screenshots
 
-[my solution](https://anac-ac.github.io/frontend-mentor/level-junior/testimonials-grid-section/index.html)
+Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/level-junior/testimonials-grid-section/index.html)
 
 <p align="center">
     <img alt="" src="./img/frontend-mentor-testimonials-web.png" width="67%" align="top">
@@ -53,6 +53,32 @@ This is a solution for the [Testimonials Grid Section](https://www.frontendmento
 
 - Grid display
 - Responsiveness
+- Semantics in HTML5
+  
+---
+### Social Media Dashboard With Theme Switcher
+
+Challenge level = **Junior**<br>
+This is a solution for the [Social Media Dashboard With Theme Switcher](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H) challenge.
+
+#### Screenshots
+
+Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/level-junior/social-media-dashboard-with-theme-switcher-master/index.html)
+
+<p align="center">
+    <img alt="" src="./img/frontend-mentor-SMD-light-web.gif" width="69%" align="top">
+&nbsp; &nbsp; &nbsp; &nbsp;
+    <img alt="" src="./img/frontend-mentor-SMD-light-mobile.gif" width="17%" align="top">   
+    <br /><br />
+    <img alt="" src="./img/frontend-mentor-SMD-dark-mobile.gif" width="17%" align="top">   
+&nbsp; &nbsp; &nbsp; &nbsp;
+    <img alt="" src="./img/frontend-mentor-SMD-dark-web.gif" width="69%" align="top">
+</p>
+
+#### Skills praticadas
+
+- Flex display
+- Responsiveness using flex properties
 - Semantics in HTML5
   
 ---
