@@ -41,6 +41,10 @@ body {
   display: flex;
   flex-direction: column;
 
+  .dashboard__display {
+    display: none;
+  }
+
   .dashboard__header {
     display: flex;
     justify-content: space-between;
