@@ -8,6 +8,8 @@
 ## Summary
 
 - [Recipe page](#recipe-page)
+- [Testimonials Grid Section](#testimonials-grid-section)
+- [Social Media Dashboard With Theme Switcher](#social-media-dashboard-with-theme-switcher)  
 
 ## Challenges
 
