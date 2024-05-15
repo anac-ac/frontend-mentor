@@ -89,7 +89,7 @@ Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/lev
 ### Calculator app
 
 Challenge level = **Intermediate**<br>
-This is a solution for the [Calculator app](https://www.frontendmentor.io/challenges/calculator-app) challenge.
+This is a solution for the [Calculator app]([https://www.frontendmentor.io/challenges/calculator-app](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)) challenge.
 
 #### Screenshots
 
