@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>calc</h1>
+      <section class="theme-section">
+        <span>1 2 3</span>
+        <div class="theme-section__selector-container">
+          <p>THEME</p>
+          <input type="checkbox" id="modeSelector" />
+          <label for="modeSelector"></label>
+        </div>
+      </section>
+    </header>
+    <section class="display-section">
+      <input id="display" readonly />
+    </section>
+    <section class="buttons-section">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="buttons-section__dark-bg">DEL</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>-</button>
+      <button>.</button>
+      <button>0</button>
+      <button>/</button>
+      <button>*</button>
+      <button class="buttons-section__dark-bg buttons-section__reset-area">RESET</button>
+      <button class="buttons-section__equals buttons-section__equals-area">=</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
