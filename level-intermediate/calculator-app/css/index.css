@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+body {
+  --main-background-color: hsl(222, 26%, 31%);
+  --text-color: hsl(0, 0%, 100%);
+  --toggle-background-color: hsl(223, 31%, 20%);
+  --label-color: hsl(6, 63%, 50%);
+  --label-color-hover: hsl(6, 93%, 67%);
+  --screen-background-color: hsl(224, 36%, 15%);
+  --key-text-color: hsl(221, 14%, 31%);
+  --key-background-color: hsl(30, 25%, 89%);
+  --key-background-color-hover: hsl(0, 0%, 100%);
+  --key-shadow-color: hsl(28, 16%, 65%);
+  --key-diff-background: hsl(225, 21%, 49%);
+  --key-diff-background-hover: hsl(224, 53%, 76%);
+  --key-diff-shadow: hsl(224, 28%, 35%);
+  --key-equals-background: hsl(6, 63%, 50%);
+  --key-equals-background-hover: hsl(6, 93%, 67%);
+  --key-equals-shadow: hsl(6, 70%, 34%);
+
+  background-color: var(--main-background-color);
+  color: var(--text-color);
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 550px;
+
+  @media (width > 600px) {
+    margin: 1.5rem auto;
+  }
+}
+
+header {
+  font-size: 0.9rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  .theme-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    align-items: flex-end;
+
+    span {
+      letter-spacing: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  .theme-section__selector-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      width: 70px;
+      height: 26px;
+      background-color: var(--toggle-background-color);
+      border-radius: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    label::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 5px;
+      width: 15px;
+      height: 15px;
+      background-color: var(--label-color);
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    label:hover:before {
+      background-color: var(--label-color-hover);
+    }
+
+    #modeSelector:checked + label::before {
+      transform: translateX(-45px);
+      background-color: var(--label-color);
+    }
+
+    #modeSelector:checked + label:hover:before {
+      background-color: var(--label-color-hover);
+    }
+  }
+}
+
+.display-section {
+  display: flex;
+
+  input {
+    background-color: var(--screen-background-color);
+    width: 100%;
+    color: var(--text-color);
+    height: 5rem;
+    border-radius: 10px;
+    padding: 0 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    text-align: end;
+
+    @media (width > 600px) {
+      height: 7rem;
+      font-size: 3rem;
+    }
+  }
+
+  input[readonly]:focus {
+    outline: none;
+  }
+}
+
+.buttons-section {
+  background-color: var(--toggle-background-color);
+  border-radius: 10px;
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  gap: 1rem;
+
+  @media (width > 600px) {
+    padding: 2rem;
+    gap: 1.7rem;
+  }
+
+  button {
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: var(--key-background-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 3.5rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--key-text-color);
+    box-shadow: 0 4px var(--key-shadow-color);
+    border: none;
+    padding-top: 0.7rem;
+    cursor: pointer;
+
+    @media (width > 600px) {
+      height: 4rem;
+      font-size: 2.7rem;
+    }
+  }
+
+  button:hover {
+    background-color: var(--key-background-color-hover);
+  }
+
+  .buttons-section__dark-bg {
+    background-color: var(--key-diff-background);
+    box-shadow: 0 4px var(--key-diff-shadow);
+    color: var(--text-color);
+    font-size: 1.2rem;
+
+    @media (width > 600px) {
+      font-size: 1.9rem;
+    }
+  }
+
+  .buttons-section__dark-bg:hover {
+    background-color: var(--key-diff-background-hover);
+  }
+
+  .buttons-section__equals {
+    background-color: var(--key-equals-background);
+    box-shadow: 0 4px var(--key-equals-shadow);
+    color: var(--text-color);
+    font-size: 1.2rem;
+
+    @media (width > 600px) {
+      font-size: 1.9rem;
+    }
+  }
+
+  .buttons-section__equals:hover {
+    background-color: var(--key-equals-background-hover);
+  }
+
+  .buttons-section__reset-area {
+    grid-column: 1 / 3;
+  }
+
+  .buttons-section__equals-area {
+    grid-column: 3 / 5;
+  }
+}

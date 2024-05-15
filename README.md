@@ -58,6 +58,7 @@ Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/lev
 - Semantics in HTML5
   
 ---
+
 ### Social Media Dashboard With Theme Switcher
 
 Challenge level = **Junior**<br>
@@ -82,5 +83,28 @@ Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/lev
 - Flex display
 - Responsiveness using flex properties
 - Semantics in HTML5
+  
+---
+
+### Calculator app
+
+Challenge level = **Intermediate**<br>
+This is a solution for the [Calculator app](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) challenge.
+
+#### Screenshots
+
+Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/level-intermediate/calculator-app/index.html)
+
+<p align="center">
+    <img alt="" src="./img/calculator-web.gif" width="40%" align="top">
+</p>
+
+#### Skills praticadas
+
+- Flex display
+- Responsiveness using flex properties
+- Semantics in HTML5
+- CSS with BEM methodology
+- JS code
   
 ---
