@@ -1,7 +1,24 @@
-const toggle = document.getElementById("mode_selector");
+const getPhrases = async () => {
+  try {
+    const response = await fetch("https://api.adviceslip.com/advice");
+    const data = await response.json();
 
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  document.getElementById("dark_mode_label").classList.toggle("dashboard__display")
-  document.getElementById("light_mode_label").classList.toggle("dashboard__display")
-});
+    addText(data)
+
+  } catch (err) {
+    console.error('Something went wrong')
+    console.error(err)
+  }
+};
+
+const addText = (data) => {
+  const numberElement = document.querySelector("span");
+  const textElement = document.querySelector("#quote");
+
+  numberElement.textContent = data.slip.id;
+  textElement.textContent = data.slip.advice;
+}
+
+const diceBtn = document.querySelector('#dice')
+diceBtn.addEventListener('click', getPhrases)
+window.onload = getPhrases;
