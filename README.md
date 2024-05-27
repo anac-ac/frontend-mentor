@@ -108,3 +108,25 @@ Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/lev
 - JS code
   
 ---
+
+### Advice Generator App
+
+Challenge level = **Junior**<br>
+This is a solution for the [Advice Generator App](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) challenge.
+
+#### Screenshots
+
+Challenge completed: [my solution](https://anac-ac.github.io/frontend-mentor/level-junior/advice-generator-app-main/index.html)
+
+<p align="center">
+    <img alt="" src="./img/frontend-mentor-AGA-web.gif" width="69%" align="top">
+&nbsp; &nbsp; &nbsp; &nbsp;
+    <img alt="" src="./img/frontend-mentor-AGA-mobile.gif" width="17.3%" align="top">   
+</p>
+
+#### Skills praticadas
+
+- Grid display
+- Responsiveness
+- Semantics in HTML5
+- JS code

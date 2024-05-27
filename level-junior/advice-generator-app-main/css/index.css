@@ -51,9 +51,16 @@ button {
   background-color: hsl(150, 100%, 66%);
   padding: 0;
   border: none;
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   cursor: pointer;
   transform: translateY(-2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  figure {
+    display: flex;
+  }
 }
