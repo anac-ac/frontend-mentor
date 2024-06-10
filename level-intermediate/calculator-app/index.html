@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/index.css" />
@@ -27,7 +27,7 @@
       </section>
     </header>
     <section class="display-section">
-      <input id="display" readonly />
+      <input autocomplete="off" id="display" onkeydown="keyboardClick(event)"/>
     </section>
     <section class="buttons-section">
       <button>7</button>
@@ -47,7 +47,7 @@
       <button>/</button>
       <button>*</button>
       <button class="buttons-section__dark-bg buttons-section__reset-area">RESET</button>
-      <button class="buttons-section__equals buttons-section__equals-area">=</button>
+      <button id="equalsBtn" class="buttons-section__equals buttons-section__equals-area">=</button>
     </section>
   </main>
   <script src="script.js"></script>
